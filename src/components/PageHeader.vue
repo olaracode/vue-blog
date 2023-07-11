@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({
+const { title, description, file } = defineProps({
   title: {
     type: String,
     required: true
@@ -16,9 +16,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <h1>{{ props.title }}</h1>
-  <p>{{ props.description }}</p>
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
   <p>
-    File: <span class="green">{{ props.file }}</span>
+    File: <span class="green">{{ file }}</span>
   </p>
 </template>
