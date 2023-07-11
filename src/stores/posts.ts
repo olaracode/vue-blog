@@ -20,18 +20,23 @@ export const usePostStore = defineStore('post', () => {
       url: `/pinia/post/${post.id}`
     }))
     posts.value = formattedPosts
+    return formattedPosts
   }
 
-  function changePost(id: number | string) {
+  async function changePost(id: number | string) {
     id = Number(id)
-    console.log(posts.value)
     if (posts.value.length === 0) {
-      fetchPosts().then(() => {
-        const post = posts.value.find((post) => post.id === id)
-        if (post) {
-          selectedPost.value = post
-        }
-      })
+      const res = await fetchPosts()
+      if (!res) return
+      const post = posts.value.find((post) => post.id === id)
+      if (post) {
+        selectedPost.value = post
+      }
+      return
+    }
+    const post = posts.value.find((post) => post.id === id)
+    if (post) {
+      selectedPost.value = post
     }
   }
 
