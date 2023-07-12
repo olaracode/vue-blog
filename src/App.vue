@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import Container from '@/components/Container.vue'
 </script>
 
 <template>
-  <header>
-    <div>
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-      <nav>
-        <RouterLink to="/">Local state</RouterLink>
+  <header class="bg-emerald-950 text-white">
+    <Container>
+      <nav class="flex py-5 items-center justify-between">
+        <RouterLink to="/"> <img alt="Vue logo" class="w-10" src="@/assets/logo.svg" /></RouterLink>
       </nav>
-    </div>
+    </Container>
   </header>
-
   <RouterView />
 </template>
