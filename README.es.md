@@ -1,20 +1,18 @@
 # Vue-Blog
 
-## Description
+## Descripción
 
-This project was created for study purposes. It is a blog made with Vue.js, Pinia and tailwindcss.
+Este proyecto fue creado con fines de estudio. Es un blog hecho con Vue.js, Pinia y tailwindcss.
 
-## Project setup
+## Configuración del projecto
 
 ```sh
 yarn || npm install
-yarn run dev || npm run dev # Compiles and hot-reloads for development
-yarn run build || npm run build # Compiles and minifies for production
-yarn run serve || npm run serve # Run production build
+yarn run dev || npm run dev # Compila y recarga en caliente para desarrollo
 yarn run test:unit || npm run test:unit # Run unit tests
 ```
 
-## Folder Structure
+## Estructura
 
 ```sh
 ├── src
@@ -28,17 +26,17 @@ yarn run test:unit || npm run test:unit # Run unit tests
 │   └── main.ts
 ```
 
-> components tests are in components/**tests** folder
+> Los tests de componentes estan en component/**tests**
 
-> store tests are inside store/\*.test.ts
+> Test de los stores store/\*.test.ts
 
 ## highlights
 
-The main concepts applied here were test driven development of components, where it applied, and store, and the use of pinia to manage the state of the application. Also the use of auth base routing
+Los principales conceptos aplicados aqui fueron el desarrollo guiado por pruebas de componentes, store, y el uso de pinia para gestionar el estado de la aplicación. También el uso de rutas basadas en autenticación
 
 ### Tests
 
-To test pinia stores the basic setup would be:
+Test de pinia base:
 
 ```ts
 import { expect, describe, it, beforeEach } from 'vitest'
@@ -63,7 +61,7 @@ describe('the store', () => {
 })
 ```
 
-To test components the basic setup would be:
+Test de componente base:
 
 ```ts
 import { describe, it, expect } from 'vitest'
@@ -80,7 +78,7 @@ describe('Component', () => {
 
 ### Pinia
 
-To create a basic store with pinia:
+Creación de store basico:
 
 ```ts
 import { defineStore } from 'pinia'
