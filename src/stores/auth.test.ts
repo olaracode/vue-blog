@@ -12,7 +12,7 @@ describe('useAuthStore', () => {
   })
   it('should login', async () => {
     const store = useAuthStore()
-    await store.login('octavioasapchi@gmail.com', 'laraasapchi')
+    await store.login('test@test.com', 'testpassword')
     expect(store.token).not.toBe(null)
   })
   it('should register', async () => {
