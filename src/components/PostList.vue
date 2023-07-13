@@ -9,34 +9,25 @@
     </template>
     <template v-else>
       <ul class="grid gap-5">
-        <li
-          v-for="i in 6"
-          :key="i"
-          class="border-b-2 p-2 border-emerald-200 animate-pulse grid gap-2"
-        >
-          <div class="h-4 bg-emerald-400 rounded w-1/2"></div>
-          <div class="flex flex-wrap gap-1">
-            <div class="h-4 bg-emerald-400 rounded w-1/6"></div>
-            <div class="h-4 bg-emerald-400 rounded w-1/6"></div>
-            <div class="h-4 bg-emerald-400 rounded w-1/6"></div>
-          </div>
-        </li>
+        <PostListSkeleton />
       </ul>
     </template>
   </Container>
 </template>
 
 <script lang="ts">
-import type { PropType } from 'vue'
-import type { BlogI } from '@/stores/blogs.types'
+import { defineComponent } from 'vue'
 import Container from './Container.vue'
 import PostItem from './PostItem.vue'
-import { defineComponent } from 'vue'
+import PostListSkeleton from './PostListSkeleton.vue'
+import type { BlogI } from '@/stores/blogs.types'
+import type { PropType } from 'vue'
 
 export default defineComponent({
   components: {
     Container,
-    PostItem
+    PostItem,
+    PostListSkeleton
   },
   props: {
     blogs: {

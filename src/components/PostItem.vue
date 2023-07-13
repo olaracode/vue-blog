@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="`/`">
+  <RouterLink :to="`blog/${slug}`">
     <span class="text-2xl font-bold hover:text-emerald-300">
       {{ title }}
     </span>

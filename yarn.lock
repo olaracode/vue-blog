@@ -289,6 +289,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
+"@types/marked@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-5.0.0.tgz#3235b9133054e6586eedabfb77aa7d4a4bafbfcf"
+  integrity sha512-YcZe50jhltsCq7rc9MNZC/4QB/OnA2Pd6hrOSTOFajtabN+38slqgDDCeE/0F83SjkKBQcsZUj7VLWR0H5cKRA==
+
 "@types/node@*":
   version "20.4.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.1.tgz#a6033a8718653c50ac4962977e14d0f984d9527d"
@@ -1593,6 +1598,16 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
+highlight.js@^11.8.0:
+  version "11.8.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.8.0.tgz#966518ea83257bae2e7c9a48596231856555bb65"
+  integrity sha512-MedQhoqVdr0U6SSnWPzfiadUcDHfN/Wzq25AkXiQv9oiOO/sG0S7XkvpFIqWBl9Yq1UYyYOOVORs5UW2XlPyzg==
+
+hljs@^6.2.3:
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/hljs/-/hljs-6.2.3.tgz#d4d6208fa2a84f294956bc50f2c812e9cbd49bcc"
+  integrity sha512-2vtAOX8kI7WO4/19XPFl7WJauIGsOxZkD+6LLmDWx6IQsPvxjnqqFsJlfg+wkghrb5I59OS5oeqGU7Ihbp+oOw==
+
 hosted-git-info@^2.1.4:
   version "2.8.9"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
@@ -1969,6 +1984,11 @@ magic-string@^0.30.0:
   integrity sha512-mbVKXPmS0z0G4XqFDCTllmDQ6coZzn94aMlb0o/A4HEHJCKcanlDZwYJgwnkmgD3jyWhUgj9VsPrfd972yPffA==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.15"
+
+marked@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-5.1.1.tgz#40b3963bb9da225314f746d5012ba7e34942f636"
+  integrity sha512-bTmmGdEINWmOMDjnPWDxGPQ4qkDLeYorpYbEtFOXzOruTwUE671q4Guiuchn4N8h/v6NGd7916kXsm3Iz4iUSg==
 
 memorystream@^0.3.1:
   version "0.3.1"
@@ -2393,6 +2413,11 @@ pretty-format@^29.5.0:
     "@jest/schemas" "^29.6.0"
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
+
+prismjs@^1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 proto-list@~1.2.1:
   version "1.2.4"
